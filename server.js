@@ -11,6 +11,14 @@ const rd = readLine.createInterface({
     console: false
 });
 
+const MAX = (array)=>{
+    let current_max = 0;
+    array.forEach((entry)=>{
+        if(entry.length > current_max) current_max = entry.length;
+    });
+    return current_max;
+};
+
 rd.on('line', (line)=>{
     array.push(line);
 });
@@ -20,7 +28,7 @@ function sortedFromFile()
 {
     let multi_array = [];
 
-    for(let i = 0; i < array.length; i++)
+    for(let i = 0; i < MAX(array); i++)
         multi_array.push([]);
     
     array.forEach((entry)=>{
