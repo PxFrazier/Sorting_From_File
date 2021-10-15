@@ -23,7 +23,6 @@ rd.on('line', (line)=>{
     array.push(line);
 });
 
-//Time complexity O(n)
 function sortedFromFile()
 {
     let multi_array = [];
