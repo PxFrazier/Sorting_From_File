@@ -26,9 +26,9 @@ rd.on('line', (line)=>{
 function sortedFromFile()
 {
     let multi_array = [];
-    let iterator = MAX(array);
+    let maximum = MAX(array);
 
-    for(let i = 0; i < iterator; i++)
+    for(let i = 0; i < maximum; i++)
         multi_array.push([]);
     
     array.forEach((entry)=>{
